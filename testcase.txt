@@ -1,0 +1,7 @@
+primary key, must-include, must-exclude, length
+'computer' None None None
+'computer' None 'graph' 5
+'computer' 'graph' None 5
+'computer' 'graph' 'graph' None (bad case)
+'computer' 'graph' None 'str' (bad case, handled with length = 5)
+'computer' 'graph' 'architecture' None

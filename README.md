@@ -13,5 +13,5 @@ The goal is to replicate ExpertSearch System, a course project built by former C
 
 # Introduce my files:
 Most of the data cleaning and processing work is in process.py.
-start.py handles the backend, and templates/index.html handles the frontend. The search result will be displayed by templates/result. html. faculties.py includes 999 lines of crawled data from different universities, and every line is one section/person.
+start.py handles the backend, and templates/index.html handles the frontend. The search result will be displayed by templates/result. html. faculties.py includes 999 lines of crawled data from different universities, and every line is one section/person. testcase.txt includes some sample testcases for the grader.
 
