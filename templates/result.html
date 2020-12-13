@@ -1,0 +1,36 @@
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Result</title>
+<style type="text/css">
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .searchBtn{
+           width: 65px;
+           height: 35px;
+           border: none;
+           position: absolute;
+           right: 50%;
+           outline: none;
+           color: white;
+           font-size: 15px;
+           background-color: cornflowerblue;
+       }
+   </style>
+</head>
+   <body>
+
+         {% for i in result %}
+         <br />
+         <br />
+         <p>
+            {{ i }} 
+         </p>
+
+         {% endfor %}
+      <button class="searchBtn" onclick="window.location.href='/'">Go back</button>
+   </body>
+</html>

@@ -1,0 +1,84 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <title>expertsearch</title>
+   <style type="text/css">
+       *{
+           padding: 0;
+           margin: 0;
+       }
+
+       .title{
+           text-align: center;
+           font-size: 25px;
+           font-weight: bold;
+           color: cadetblue;
+           margin-top: 100px;
+           margin-bottom: 20px;
+           font-family: fantasy;
+       }
+
+       .searchBox{
+           width: 40%;
+           height: 35px;
+           left: 30%;
+           border: 1px solid cadetblue;
+           outline: hidden;
+           border-radius: 2px;
+           margin: 0 auto;
+           position: relative;
+       }
+
+       .inputBox{
+           border: none;
+           width: 50%;
+           height: 35px;
+           left: 30%;
+           line-height: 35px;
+           outline: none;
+           caret-color:#008B8B;
+           font-size: 14px;
+       }
+
+       .searchBtn{
+           width: 65px;
+           height: 35px;
+           border: none;
+           position: absolute;
+           right: 20%;
+           outline: none;
+           color: white;
+           font-size: 15px;
+           margin: 0 auto;
+           background-color: cornflowerblue;
+       }
+
+       .searchBtn:hover{
+           background-color: #497fdf;
+       }
+   </style>
+</head>
+   <body>
+      <div class="title">
+         <p>Search Expert</p>
+     </div>
+
+      <form action = "http://localhost:5000/result" method = "POST">
+         <input class="searchBox" type = 'text' name = 'text' placeholder="  I will tell you all you want to know!">
+         <br />
+         <br />
+         <input class="searchBox" type = 'good_keyword' name = 'good_keyword' placeholder="  Must contain">
+         <br />
+         <br />
+         <input class="searchBox" type = "bad_keyword" name = "bad_keyword" placeholder="  Don't contain">
+         <br />
+         <br />
+         <input class="searchBox" type = "length" name = "length" placeholder="  How many do you want?">
+         <br />
+         <br />
+         <input class="searchBtn" type = "submit" value = "submit" />
+      </form>
+
+
+   </body>
+</html>
