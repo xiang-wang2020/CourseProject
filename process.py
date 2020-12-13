@@ -39,7 +39,6 @@ def get_corpus(good_keywords = None, bad_keywords = None):
     file1 = open('faculties.txt', 'r') 
     l = file1.readlines()
     cleaned = clean(l)
-    # print(len(cleaned))
     if good_keywords != None:
         good_keywords = good_keywords.lower().split()
     if bad_keywords != None:
