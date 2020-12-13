@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
 import process
-import test_function
 app = Flask(__name__)
 
 @app.route('/')
@@ -17,7 +16,7 @@ def result():
         try:
             length = int(length)
         except ValueError:
-            return render_template('index.html')
+            length = 5
         result = []
 
         l, vector, base = process.get_corpus(good_keywords = info, bad_keywords = bad_info)
@@ -25,7 +24,6 @@ def result():
             print('<p>bad keywords</p>')
             return render_template('index.html')
         query = request.form['text'].split()
-        test_function.my_print(query)
         res = process.analysis_data(l, vector, base, query, int(length))
         for i in res:
             result.append(l[i])
